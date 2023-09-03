@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #774672;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  display: none;
+}
+
+.hero {
+  background-color: #c789bd;
+  text-align: center;
+  padding: 4rem;
+  color: #fff;
+}
+
+/* Other section styles (about, services) */
+.about,
+.services {
+  padding: 2rem;
+}
+
+footer {
+  background: #774672;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 1rem 2rem;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .hero {
+    padding: 6rem;
+  }
+
+  .about,
+  .services {
+    padding: 4rem;
+  }
+
+  .se {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    color: #fff;
+
+    gap: 3px;
+  }
+
+  .se li {
+    background-color: #c789bd;
+    width: 100%;
+    height: 300px;
+    margin: 3px;
+    display: flex;
+    padding: 3px;
+    justify-content: center;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 1rem 4rem;
+  }
+
+  .hero {
+    padding: 8rem;
+  }
+
+  .about,
+  .services {
+    padding: 6rem;
+  }
+
+  footer {
+    padding: 3rem;
+  }
+}

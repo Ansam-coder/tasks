@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="txt" type="text">
+    <button id="btn1">saveData</button>
+    <script>
+        document.getElementById("btn1").addEventListener("click",function(){
+            var val=document.querySelector("#txt").value;
+            localStorage.setItem("userName",val)
+            localStorage.setItem("userAge",20)
+            localStorage.setItem("userAddr","123 st")
+
+            sessionStorage.setItem("count",5)
+
+
+
+            // console.log(val)
+        })
+    </script>
+</body>
+</html>
